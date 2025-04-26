@@ -92,9 +92,9 @@
     <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Найдена странная записка со странными символами...)</p>
 
     <div style="background: #111; padding: 10px; margin-top: 20px; font-family: 'Courier New', monospace; font-size: 16px; border: 1px dashed #33ff33;">
-      ФШНО ЕХЖЗХ ЙЦЗЙР (шифр Цезаря)
+      ФШНО ЕХЖЗХ ЙЦЗЙР 
     </div>
-    <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Похоже, это сообщение зашифровано... Есть пометка "Цезарь +3")</p>
+    <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Похоже, это сообщение очень важное... )</p>
   </div>
 
   <div class="section hidden" id="monitor">
