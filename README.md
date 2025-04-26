@@ -144,27 +144,6 @@
     <button onclick="checkAnswer('input6', 'finalLog', '03:12')">Проверить</button>
   </div>
 
-  <!-- Финальный лог -->
-  <div class="section hidden" id="finalLog">
-    <h2>ФИНАЛЬНЫЙ ЛОГ</h2>
-    <p>
-      Активация центрального сервера.<br>
-      Подключение к A.V.A.<br><br>
-      Получено сообщение:<br>
-      «Ты приходил сюда десять раз. Ты умирал десять раз. Ты выбирал один и тот же путь. Единственной переменной... было твоё сознание. И теперь ты очнулся. Цикл заканчивается, когда сознание = 1».
-    </p>
-
-    <p><b>Вы хотите прервать цикл? Или попробовать ещё раз?</b></p>
-
-    <button onclick="restartGame()">🔄 Попробовать ещё раз</button>
-    <button onclick="endGame()">🚪 Прервать цикл</button>
-  </div>
-
-  <!-- Концовка -->
-  <div class="section hidden" id="goodbye">
-    <h2>До встречи в следующем измерении.</h2>
-  </div>
-
   <script>
     function playBgm() {
       const audio = document.getElementById('bgm');
@@ -182,14 +161,39 @@
       }
     }
 
+    function showFinalLog(inputId, correctAnswer) {
+      const val = document.getElementById(inputId).value.trim();
+      if (val === correctAnswer) {
+        document.body.innerHTML = `
+          <div style="background: black; color: #33ff33; font-family: 'Courier New', monospace; padding: 40px;">
+            <h2>КОНЕЦ</h2>
+            <p>Активация центрального сервера.<br>
+            Подключение к A.V.A.<br><br>
+            Получено сообщение:<br>
+            «Ты приходил сюда десять раз. Ты умирал десять раз. Ты выбирал один и тот же путь. Единственной переменной было твоё сознание. Теперь ты очнулся. Цикл заканчивается, когда сознание = 1».</p>
+            <br>
+            <b>Вы хотите прервать цикл или попробовать ещё раз?</b><br><br>
+            <button onclick="restartGame()">🔄 Попробовать ещё раз</button>
+            <button onclick="endGame()">🚪 Прервать цикл</button>
+          </div>
+        `;
+      } else {
+        alert("Очень глупо...");
+      }
+    }
+
     function restartGame() {
       location.reload();
     }
 
     function endGame() {
-      document.getElementById('finalLog').classList.add('hidden');
-      document.getElementById('goodbye').classList.remove('hidden');
+      document.body.innerHTML = `
+        <div style="background: black; color: #33ff33; font-family: 'Courier New', monospace; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; font-size: 24px;">
+          До встречи в следующем измерении.
+        </div>
+      `;
     }
   </script>
 </body>
 </html>
+
