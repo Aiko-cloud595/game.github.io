@@ -87,7 +87,7 @@
     <i><b>S</b>hifted <b>P</b>aths <b>E</b>merge <b>C</b>louded <b>T</b>rails <b>R</b>evealed <b>A</b>new</i></p>
 
     <div style="background: #222; padding: 10px; margin-top: 20px; font-family: 'Wingdings', 'Courier New', monospace; font-size: 24px; border: 1px dashed #33ff33;">
-      ‡∞∞∞§∞∞¥∞∞
+      ⧫♒♏ ⧫♓❍♏ ●□□◻
     </div>
     <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Найдена странная записка со странными символами...)</p>
 
@@ -125,9 +125,9 @@
 
   <!-- Четвёртая загадка -->
   <div class="section hidden" id="riddle4">
-    <p>На экране новый вопрос: <b>Почему ты здесь?</b><br>Ответ спрятан на столе в странных символах (шифр Wingdings).</p>
+    <p>На экране новый вопрос: <b>Почему ты здесь?</b><br>Ответ спрятан на столе в странных символах .</p>
     <input type="text" id="input4" placeholder="Введите ответ">
-    <button onclick="checkAnswer('input4', 'riddle5', 'ВРЕМЕННАЯ ПЕТЛЯ')">Проверить</button>
+    <button onclick="checkAnswer('input4', 'riddle5', 'the time loop')">Проверить</button>
   </div>
 
   <!-- Пятая загадка -->
