@@ -92,9 +92,9 @@
     <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Найдена странная записка со странными символами...)</p>
 
     <div style="background: #111; padding: 10px; margin-top: 20px; font-family: 'Courier New', monospace; font-size: 16px; border: 1px dashed #33ff33;">
-      ФШНО ЕХЖЗХ ЙЦЗЙР 
+      щлно дцжзх езъзр 
     </div>
-    <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Похоже, это сообщение очень важное... )</p>
+    <p style="font-size: 12px; color: #33ff33; margin-top: 5px;">(Рядом было нашкрябано число +3.. Похоже, это сообщение очень важное... )</p>
   </div>
 
   <div class="section hidden" id="monitor">
@@ -113,7 +113,7 @@
   <div class="section hidden" id="riddle2">
     <p>Введите перевод морзянки:</p>
     <input type="text" id="input2" placeholder="Введите ответ">
-    <button onclick="checkAnswer('input2', 'riddle3', 'ФИНАЛ')">Проверить</button>
+    <button onclick="checkAnswer('input2', 'riddle3', 'финал')">Проверить</button>
   </div>
 
   <!-- Третья загадка -->
@@ -127,14 +127,14 @@
   <div class="section hidden" id="riddle4">
     <p>На экране новый вопрос: <b>Почему ты здесь?</b><br>Ответ спрятан на столе в странных символах .</p>
     <input type="text" id="input4" placeholder="Введите ответ">
-    <button onclick="checkAnswer('input4', 'riddle5', 'the time loop')">Проверить</button>
+    <button onclick="checkAnswer('input4', 'riddle5', 'временная петля')">Проверить</button>
   </div>
 
   <!-- Пятая загадка -->
   <div class="section hidden" id="riddle5">
-    <p>Скрытое сообщение оживает:<br><i>Расшифруй надпись "ФШНО ЕХЖЗХ ЙЦЗЙР" </i><br>Введите фразу:</p>
+    <p>Скрытое сообщение оживает:<br><i>Расшифруй надпись у стола </i><br>Введите фразу:</p>
     <input type="text" id="input5" placeholder="Введите ответ">
-    <button onclick="checkAnswer('input5', 'riddle6', 'ЦИКЛ БУДЕТ ВЕЧЕН')">Проверить</button>
+    <button onclick="checkAnswer('input5', 'riddle6', 'цикл будет вечен')">Проверить</button>
   </div>
 
   <!-- Шестая загадка -->
